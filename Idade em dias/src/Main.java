@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class App {
+public class Main {
     public static void main(String[] args) throws Exception {
         Scanner in = new Scanner(System.in);
 
@@ -9,11 +9,11 @@ public class App {
   
         mes=dia/30;
         ano=mes/12;
-        mes=mes%12;
-        dia=dia%mes;
+        mes=(mes%12);
+        dia=(dia%365)%30;
         
-        System.out.println("Anos:"+ano);
-        System.out.println("Mes:"+mes);
-        System.out.println("Dias:"+dia);
+        System.out.println(ano+" "+"ano(s)");
+        System.out.println(mes+" "+"mes(es)");
+        System.out.println(dia+" "+"dia(s)");
     }
 }
