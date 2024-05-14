@@ -9,7 +9,7 @@ public class Main {
   
         mes=dia/30;
         ano=mes/12;
-        mes=(dia/ano);
+        mes=(mes/12)-(ano*12);
         dia=(dia%365)%30;
         
         System.out.println(ano+" "+"ano(s)");
